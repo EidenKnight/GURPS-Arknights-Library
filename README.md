@@ -375,3 +375,14 @@ Arts Projectile
 - 'Archosauria' racial template added
 - Updated Advantage descriptors on Ursine and Goliath templates
 - Hybrid flexible stat discount increased to 30%
+
+-----------------------------
+
+## Version 1.03
+
+### New contente:
+- New advantage: Arts Casting Specialization
+- Tweaks to Vampire template
+
+
+

@@ -10,7 +10,7 @@
 					"id": "tAZqmM-ZOuLN8dEE1",
 					"source": {
 						"library": "/gcs_user_library",
-						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"path": "Trait Libraries/Arknights Terran Traits.adq",
 						"id": "tBGhZ_va6XoXOVPH-"
 					},
 					"name": "Terran Physiology",
@@ -104,7 +104,7 @@
 					"id": "tIyCe0WNpXhQIR1F6",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Traits.adq",
+						"path": "Basic Set/Basic Set Traits.adq",
 						"id": "tWpTlKKOpepIiYZqD"
 					},
 					"name": "Arts Casting",
@@ -240,6 +240,14 @@
 					}
 				},
 				{
+					"id": "t1DoO92VZd5_jMYlR",
+					"name": "Sanguine Sipper",
+					"local_notes": "Your innate mastery of blood arts allows you to draw power from the scarlet ichor... even from afar.  Whenever you deal damage to an enemy via melee attacks or arts, restore 1 MP (restore HP or FP if MP is full).",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
 					"id": "te_zNbMTbpjj9Q-M4",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
@@ -276,7 +284,10 @@
 							"defaults": [
 								{
 									"type": "skill",
-									"name": "Brawling"
+									"name": {
+										"compare": "is",
+										"qualifier": "Brawling"
+									}
 								},
 								{
 									"type": "dx"
@@ -292,7 +303,7 @@
 					}
 				},
 				{
-					"id": "twpo-9Sh0oKT7VWwQ",
+					"id": "tbl8KFc5ZL3GkHXUB",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -308,16 +319,21 @@
 					],
 					"modifiers": [
 						{
-							"id": "mJzTKG2VyqrH7xeIA",
+							"id": "mkTClh3yezolLoHV2",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mJzTKG2VyqrH7xeIA"
+							},
 							"name": "Vampiric Heritage",
-							"cost_adj": "-40%"
+							"cost_adj": "-35%"
 						}
 					],
 					"base_points": 30,
 					"points_per_level": 5,
 					"can_level": true,
 					"calc": {
-						"points": 18,
+						"points": 20,
 						"current_level": 0
 					}
 				},
@@ -330,9 +346,9 @@
 					}
 				},
 				{
-					"id": "tObwjS9dxsGSJamQU",
+					"id": "twXSwLK1flfk6cvGh",
 					"name": "Vampire's Heritage",
-					"local_notes": "Blood.  Not only does it sustain you, your kind have venerated the ichor of life to the point your arts have an innate specialization in manipulating it.  Besides providing a +1 advantage when casting any blood-related spell, it also allows you to ignore the standard requirements in learning blood arts.",
+					"local_notes": "Blood.  Not only does it sustain you, your kind have venerated the ichor of life to the point your arts have an innate specialization in manipulating it.  Besides providing a +1 advantage when casting any blood-related spell, it also allows you to ignore the standard requirements in learning blood arts.\n\nAdditionally, ignore any normal usage limitations on casting healing arts on yourself or others.",
 					"features": [
 						{
 							"type": "spell_bonus",
@@ -386,7 +402,7 @@
 				}
 			],
 			"calc": {
-				"points": 18
+				"points": 20
 			}
 		},
 		{
@@ -394,7 +410,7 @@
 			"name": "Vampire Racial Disadvantages",
 			"children": [
 				{
-					"id": "tgrW53iFk8cDum_xs",
+					"id": "tgYxN9tEVrwZM_lvd",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -409,41 +425,71 @@
 					],
 					"modifiers": [
 						{
-							"id": "mBgRVmBwAHqP6TvuK",
+							"id": "mLhdqxramEdms7hXL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mBgRVmBwAHqP6TvuK"
+							},
 							"name": "Rarity: Rare",
 							"reference": "B130",
 							"cost_adj": "-30",
 							"disabled": true
 						},
 						{
-							"id": "mWKfB7ubGKQjRgBWO",
+							"id": "m1AHuUA6eGh9B5-4h",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mWKfB7ubGKQjRgBWO"
+							},
 							"name": "Rarity: Occasional",
 							"reference": "B130",
 							"cost_adj": "-20",
 							"disabled": true
 						},
 						{
-							"id": "m1vNb0sUhx-cRrWFD",
+							"id": "msu0sTX74bP7FWD_f",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m1vNb0sUhx-cRrWFD"
+							},
 							"name": "Rarity: Common",
 							"reference": "B130",
 							"cost_adj": "-10",
 							"disabled": true
 						},
 						{
-							"id": "mhKVikTOTqrYmNlOq",
+							"id": "mIXlQ2v9xo0iQC-Ii",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mhKVikTOTqrYmNlOq"
+							},
 							"name": "Rarity: Very Common",
 							"reference": "B130",
 							"cost_adj": "-5"
 						},
 						{
-							"id": "m_iPQG7EDuKtxK51L",
+							"id": "mESw7zuRRYOZYuHep",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m_iPQG7EDuKtxK51L"
+							},
 							"name": "Illegal",
 							"reference": "B130",
 							"cost_adj": "-5",
 							"disabled": true
 						},
 						{
-							"id": "mS1pNr0ayxiT2yv2G",
+							"id": "mygJfs-J1x7K8kPgw",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mS1pNr0ayxiT2yv2G"
+							},
 							"name": "Frequency: Constantly",
 							"reference": "B130",
 							"local_notes": "Lose 1 HP per minute without it",
@@ -451,7 +497,12 @@
 							"disabled": true
 						},
 						{
-							"id": "m8ADNZRxtv5FszCU9",
+							"id": "mkqs8mGFBIiEdTYtf",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m8ADNZRxtv5FszCU9"
+							},
 							"name": "Frequency: Hourly",
 							"reference": "B130",
 							"local_notes": "Lose 1 HP per 10 minutes after missing a hourly dose",
@@ -459,14 +510,36 @@
 							"disabled": true
 						},
 						{
-							"id": "mrt8UaHRikpmTGJuG",
+							"id": "m3-oOv6j2Yuh9yboo",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mrt8UaHRikpmTGJuG"
+							},
 							"name": "Frequency: Daily",
 							"reference": "B130",
 							"local_notes": "Lose 1 HP per hour after missing a daily dose",
-							"cost_adj": "x3"
+							"cost_adj": "x3",
+							"disabled": true
 						},
 						{
-							"id": "mwObQL3nrs0HE_wi_",
+							"id": "muq1Hr_QeBzAIqvam",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mqKkvZUoqr_6Uc-ZF"
+							},
+							"name": "Frequency: Three Days (Psychological)",
+							"local_notes": "Lose 1 FP every 3 hours after missing a regular dose every three days.\n\nNote:  This does not affect the natural recovery of FP during rest and sleep.",
+							"cost_adj": "x2"
+						},
+						{
+							"id": "mL0pWWouP1r3jP4mH",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mwObQL3nrs0HE_wi_"
+							},
 							"name": "Frequency: Weekly",
 							"reference": "B130",
 							"local_notes": "Lose 1 HP per six hours after missing a weekly dose",
@@ -474,7 +547,12 @@
 							"disabled": true
 						},
 						{
-							"id": "mIY_3mtSUz0JcaUEh",
+							"id": "mwxpk3ZKpDva6FpdF",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mIY_3mtSUz0JcaUEh"
+							},
 							"name": "Frequency: Monthly",
 							"reference": "B130",
 							"local_notes": "Lose 1 HP per day after missing a monthly dose",
@@ -482,7 +560,12 @@
 							"disabled": true
 						},
 						{
-							"id": "m_Zumc9l6Bm37bxNw",
+							"id": "m1Ckpyi5Y4y6zX3y9",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "m_Zumc9l6Bm37bxNw"
+							},
 							"name": "Frequency: Seasonally",
 							"reference": "B130",
 							"local_notes": "Lose 1 HP per 3 days after missing a seasonal dose",
@@ -490,7 +573,12 @@
 							"disabled": true
 						},
 						{
-							"id": "mTDjh2UwuiN1bUMUH",
+							"id": "mGL5is674b2hg_9KB",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mTDjh2UwuiN1bUMUH"
+							},
 							"name": "Frequency: Yearly",
 							"reference": "B130",
 							"local_notes": "Lose 1 HP per 2 weeks after missing a yearly dose",
@@ -498,7 +586,12 @@
 							"disabled": true
 						},
 						{
-							"id": "mqx2gC3D9h4U9hjSv",
+							"id": "mjjfUFVxbXXlb1unf",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mqx2gC3D9h4U9hjSv"
+							},
 							"name": "Aging",
 							"reference": "B130",
 							"local_notes": "Age 2 years for each HP lost due to this dependency",
@@ -507,14 +600,46 @@
 						}
 					],
 					"calc": {
-						"points": -15
+						"points": -10
+					}
+				},
+				{
+					"id": "tBxBZ_tnQPFABjDmu",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "t-ZNx5ZaorWdo5A4p"
+					},
+					"name": "Infectious Attack (Vampire)",
+					"reference": "B140*",
+					"local_notes": "(You must take this trait if your character is Infected.  This trait cannot be removed.)\n\nWhen attacking with bite or Vampire Bite, upon a successful hit, an uninfected target must make an HT roll for contracting Oripathy each time damage is applied.\n\nIMPORTANT NOTE:  Due to Rhodes Island's humanitarian policies focused on treating and preventing the spread of Oripathy, intentionally inflicting Oripathy on another individual is highly frowned upon and will result in serious repercussions.",
+					"tags": [
+						"Disadvantage",
+						"Physical",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "msLb_BjxNiSgBVNUy",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "mI0x3ILXWJdJl2LhH"
+							},
+							"name": "Vampiric Carrier",
+							"cost_adj": "x4"
+						}
+					],
+					"base_points": -5,
+					"calc": {
+						"points": -20
 					}
 				},
 				{
 					"id": "txfl3doPGOtP9rYEe",
 					"source": {
 						"library": "/gcs_user_library",
-						"path": "Trait Libraries\\Arknights Terran Traits.adq",
+						"path": "Trait Libraries/Arknights Terran Traits.adq",
 						"id": "tFVCzZZ1e01Fvormg"
 					},
 					"name": "Oripathy: Resistance",
@@ -535,7 +660,7 @@
 					"id": "tGTcDelgSeNi4hgAp",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
-						"path": "Basic Set\\Basic Set Traits.adq",
+						"path": "Basic Set/Basic Set Traits.adq",
 						"id": "tSSmnBdJ1f7mFMRL5"
 					},
 					"name": "Social Stigma (Sarkaz)",
@@ -722,7 +847,7 @@
 				}
 			],
 			"calc": {
-				"points": -45
+				"points": -60
 			}
 		}
 	]

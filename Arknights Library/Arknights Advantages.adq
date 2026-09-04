@@ -5,7 +5,7 @@
 			"id": "tKHwaUKZqCbAPD5rN",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set\\Basic Set Traits.adq",
+				"path": "Basic Set/Basic Set Traits.adq",
 				"id": "tpnv8EEpAS6Er2pwK"
 			},
 			"name": "Arts Casting",
@@ -18,42 +18,42 @@
 			],
 			"modifiers": [
 				{
-					"id": "m7f3s-X6abtT-We7l",
+					"id": "mLnt2xFH9EeVIDjJR",
 					"name": "Dance",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mIBTKPYtU4QxlrSfL",
+					"id": "m7wNRLt5T6HdrehIc",
 					"name": "Dark-Aspected",
 					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mWXPb-0QcyFZs2cIK",
+					"id": "m3jiKHenlwXqpDB2s",
 					"name": "Day-Aspected",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mM_yHw1fvK0_HJ2D-",
+					"id": "mbMTev4xPTBMMWBAw",
 					"name": "Musical",
 					"cost_adj": "-50%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "m33uiOY_LOB6eueGQ",
+					"id": "mqOfQ07ARJumrcf9c",
 					"name": "Night-Aspected",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mXxgjFn2UXo7RWHCs",
+					"id": "mhdXRf1ON5deKtJlo",
 					"name": "One College",
 					"local_notes": "@College@",
 					"cost_adj": "-40%",
@@ -61,14 +61,14 @@
 					"disabled": true
 				},
 				{
-					"id": "m6_PnZOxgxVOatW4c",
+					"id": "mS2ufFIKJOxQhlPNj",
 					"name": "Solitary",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
 					"disabled": true
 				},
 				{
-					"id": "mPBMnyNDK6AfFJtLq",
+					"id": "m4fJR_CIKqI_s1PZ8",
 					"name": "Song",
 					"cost_adj": "-40%",
 					"affects": "levels_only",
@@ -78,11 +78,6 @@
 			"base_points": 5,
 			"points_per_level": 10,
 			"features": [
-				{
-					"type": "attribute_bonus",
-					"attribute": "mp",
-					"amount": 3
-				},
 				{
 					"type": "weapon_bonus",
 					"selection_type": "weapons_with_required_skill",
@@ -121,32 +116,37 @@
 			}
 		},
 		{
-			"id": "tAslFFooSNDjQoy_T",
+			"id": "taa6bjIVVrxsyehBs",
 			"source": {
 				"library": "richardwilkes/gcs_master_library",
-				"path": "Basic Set/Basic Set Traits.adq",
-				"id": "twvmiGFkU_Fw0FuZF"
+				"path": "Thaumatology/Thaumatology - Magical Styles Traits.adq",
+				"id": "tKZEQNta7WuKXrf7v"
 			},
-			"name": "Extra MP Points",
-			"local_notes": "Replaces FP when spellcasting until spent.\nUse this instead of Extra Fatigue Points Magic Only. ",
+			"name": "Arts Casting Specialization (@College@)",
+			"reference": "TMS27",
+			"local_notes": "Increases the SL of arts pertaining to designated college.",
 			"tags": [
-				"Advantage",
-				"Attribute",
-				"Physical"
+				"Magic Perk",
+				"Supernatural"
 			],
-			"points_per_level": 2,
+			"base_points": 1,
+			"points_per_level": 3,
 			"features": [
 				{
-					"type": "attribute_bonus",
-					"attribute": "mp",
-					"amount": 1
+					"type": "spell_bonus",
+					"match": "college_name",
+					"name": {
+						"compare": "contains",
+						"qualifier": "@College@"
+					},
+					"amount": 1,
+					"per_level": true
 				}
 			],
 			"can_level": true,
-			"levels": 1,
 			"calc": {
-				"points": 2,
-				"current_level": 1
+				"points": 1,
+				"current_level": 0
 			}
 		}
 	]
