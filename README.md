@@ -380,9 +380,16 @@ Arts Projectile
 
 ## Version 1.03
 
-### New contente:
+### New content:
 - New advantage: Arts Casting Specialization
 - Tweaks to Vampire template
+
+-----------------------------
+
+## Version 1.031 (Hotfix)
+
+### Fixes:
+- Changed notes and added max level of 3 to Arts Specialization
 
 
 

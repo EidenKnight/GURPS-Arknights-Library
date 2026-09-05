@@ -124,13 +124,14 @@
 			},
 			"name": "Arts Casting Specialization (@College@)",
 			"reference": "TMS27",
-			"local_notes": "Increases the SL of arts pertaining to designated college.",
+			"local_notes": "Increases the SL of arts pertaining to designated college. May have at max 2 specializations per character, 3 if allowed under GM discretion. Max level, 3.",
 			"tags": [
 				"Magic Perk",
 				"Supernatural"
 			],
 			"base_points": 1,
 			"points_per_level": 3,
+			"max_levels": "3",
 			"features": [
 				{
 					"type": "spell_bonus",
