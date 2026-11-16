@@ -391,5 +391,20 @@ Arts Projectile
 ### Fixes:
 - Changed notes and added max level of 3 to Arts Specialization
 
+-----------------------------
+
+## Version 1.1 
+
+### New content:
+- Firearms reworked:
+  - Several balance changes
+  - New modifiers
+  - New types of ammunitions
+  - New melee attachments (Bayonets, Integrated weapons)
+- Bows and Crossbows added to the equipment list:
+  - Diverse set of crossbows and bows
+  - Diverse set of ammunitions, many with special effects
+  - Quivers
+
 
 
