@@ -406,5 +406,23 @@ Arts Projectile
   - Diverse set of ammunitions, many with special effects
   - Quivers
 
+-----------------------------
 
+## Version 1.2
 
+### New content:
+- New content for casters:
+  - Advantages:
+    - Arts Casting Specialization (@College@): Increases the SL of arts pertaining to designated college. May have at max 2 specializations per character, 3 if allowed under GM discretion. Max level, 3.
+    - Arts Casting Methodology: During combat, casters may spend a major maneuver to concentrate (This concentration does not apply penalties to subsequent casting).  While concentrating and not performing any move maneuvers (stepping is allowed), casters regain 1 MP each turn.
+      - Possible modifiers:
+	- Orthodox Casting: Passively regain MP
+	- Prepared Arts Casting: May a set of declared spells right away at the start of combat
+	- Extended Arts Casting: May spend more MP to launch spells further away
+	- Cumulative Arts Casting: Starts at 0 MP. Gains MP by using a Concentration maneuver. May cast spells immediately during the concentration action, so long as the cost of is equal or below current MP.
+	- Warcasting : Recovers MP by using active defenses, and may cast a spell during a melee attack once per turn.
+	- Specialized Siege Arts Casting: Improves AOE radius and damage further by spending MP.
+	- Specialized Affliction Arts Casting: Reduce base cost and improve spells that result in Save Checks (such as Fright check, HT check, etc). 
+	- Specialized Augmentation Arts Casting: Reduces base cost of attribute-boosting spells & makes them easier to cast.
+	- Specialized Healing Arts Casting: Increases effectiveness of healing spell, may use MP to AOE heal.
+    - Extra MP Points 0: Gains an extra MP to cast spells with.

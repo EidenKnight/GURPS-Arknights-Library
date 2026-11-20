@@ -1,4 +1,5 @@
 {
+	"file_type": "trait_list",
 	"version": 5,
 	"rows": [
 		{
@@ -112,6 +113,7 @@
 			"levels": 1,
 			"calc": {
 				"points": 15,
+				"level": 1,
 				"current_level": 1
 			}
 		},
@@ -147,6 +149,118 @@
 			"can_level": true,
 			"calc": {
 				"points": 1,
+				"level": 0,
+				"current_level": 0
+			}
+		},
+		{
+			"id": "tQorythKS99EK05tn",
+			"name": "Arts Casting Methodology",
+			"local_notes": "During combat, casters may spend a major maneuver to concentrate (This concentration does not apply penalties to subsequent casting).  While concentrating and not performing any move maneuvers (stepping is allowed), casters regain 1 MP each turn.",
+			"modifiers": [
+				{
+					"id": "M_HMJi09cfSsP7O9S",
+					"name": "Casting Type",
+					"choice": {
+						"type": "count",
+						"qualifier": {
+							"compare": "is",
+							"qualifier": 1
+						}
+					},
+					"children": [
+						{
+							"id": "m41O_H2xWSB3hqkue",
+							"name": "Orthodox Casting",
+							"local_notes": "During combat, this caster passively regains 1 MP each turn they are not casting a spell, concentrating on a spell, or spending MP.  Outside of combat, this caster recovers their MP at an accelerated rate as if they possessed the Very Fit trait (Basic Set pg.55).",
+							"cost_adj": "+0",
+							"disabled": true
+						},
+						{
+							"id": "m4E2ORxImN4FmK5y-",
+							"name": "Prepared Arts Casting",
+							"local_notes": "At the start of combat, the caster prepares 1 spell/2 levels of Arts Casting (Declare the prepared spells to the GM).  During combat, the caster may cast and use the declared spells without cast time and at any desired level once each for the appropriate MP cost.",
+							"cost_adj": "+0",
+							"disabled": true
+						},
+						{
+							"id": "m0cHDjGOcxUA7pVdH",
+							"name": "Extended Arts Casting",
+							"local_notes": "When casting a spell, spending 1 additional MP allows the caster to treat a prepared spell as if under the Throw Spell effect (Magic pg.128-129).  Spending 1 additional MP on a spell already classified as a missile spell instead doubles its ½ distance and max distance.",
+							"cost_adj": "+0",
+							"disabled": true
+						},
+						{
+							"id": "mzZug0qNCmh0XyGsW",
+							"name": "Cumulative Arts Casting",
+							"local_notes": "At the beginning of combat, caster’s MP gauge is set at 0 and cannot be raised or modified by any outside method.  While concentrating to recover MP, this caster type regains 1 MP/2 levels of Arts Casting instead of just 1 MP.  During concentration, the caster may immediately cast spell(s) (casting does not break the MP recovery concentration) that have a combined FP/MP cost at or below their current MP level each turn.  If the caster’s concentration is broken or interrupted, their MP gauge will be reset to 0 at the end of the following turn if concentration is not resumed.",
+							"cost_adj": "+0",
+							"disabled": true
+						},
+						{
+							"id": "mlIn_QXHU04B0YYii",
+							"name": "Warcasting",
+							"local_notes": "This caster cannot recover MP through concentration.  Upon succeeding an active defense reaction (parry, dodge, block, or blocking spell), this caster recovers +1 MP.  Additionally, after performing a melee attack, this caster may cast one spell as part of the same major maneuver.  Casting a spell with a melee attack can only be done once per turn.",
+							"disabled": true
+						},
+						{
+							"id": "mgr1wupaPa0b_u9SV",
+							"name": "Specialized Siege Arts Casting",
+							"local_notes": "This caster can improve the radius of their AOE spells by spending 1 additional MP per yard of additional radius instead of the listed cost for expanding an AOE spell (Magic pg.11).  Additionally, this caster can spend extra MP on their explosive spells to increase the yard increments between each explosion damage reduction (Basic Set pg.414-415).  For each additional point of MP spent, add 1 yard to the damage reduction incremental.  Explosive spell damage is also divided by 2 instead of 3 and damage extends out until the value reaches 0.",
+							"disabled": true
+						},
+						{
+							"id": "m1sKxzVje5WsCOnbr",
+							"name": "Specialized Affliction Arts Casting",
+							"local_notes": "When this caster uses a spell with a Fright Check, HT, or Will save against an unwilling target, reduce the base cost by 50% before applying the SL cost reduction.  Additionally, this caster type may freely expand the radius of their spell’s targeted area by spending 1 MP per yard of additional radius.",
+							"disabled": true
+						},
+						{
+							"id": "muRLaABSUqN8qqzq-",
+							"name": "Specialized Augmentation Arts Casting",
+							"local_notes": "When this caster uses a spell that positively affects a target’s attributes or uses a blocking spell, increase the SL by 2.  Reduce the base cost of attribute-boosting spells by 50% before applying SL cost reduction.  When an ally within 10 yards of the caster is attacked, this caster may choose to use a blocking spell on their ally as an additional active defense reaction once per turn.",
+							"disabled": true
+						},
+						{
+							"id": "mF-CwdkYKDGkXDUgE",
+							"name": "Specialized Healing Arts Casting",
+							"local_notes": "When this caster uses a spell that heals HP, increase the healed amount by 50% (rounded up).  Additionally, this class can change their healing spells into AOE spells by spending more MP.  For each point of extra MP spent, increase the radius of the healing spell’s effect by +1.",
+							"disabled": true
+						}
+					]
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "tSCj8JAgmZm8e_lr7",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Traits.adq",
+				"id": "twvmiGFkU_Fw0FuZF"
+			},
+			"name": "Extra MP Points",
+			"local_notes": "Replaces FP when spellcasting until spent.\nUse this instead of Extra Fatigue Points Magic Only. ",
+			"tags": [
+				"Advantage",
+				"Attribute",
+				"Physical"
+			],
+			"points_per_level": 2,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "mp",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 0,
+				"level": 0,
 				"current_level": 0
 			}
 		}
